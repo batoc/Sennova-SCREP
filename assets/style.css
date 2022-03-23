@@ -1,0 +1,147 @@
+/* reset padding y margin general */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+@font-face {
+    font-family: zurichItalic;
+    src: url(ZurichCondensedItalicBT.ttf)
+}
+@font-face {
+    font-family: zurichBold;
+    src: url(ZurichBoldBT.ttf)
+}
+/* creamos variables */
+:root{
+/* color */
+--naranja: #FC7323;
+--verde: #238276;
+--verdeComplementario: #596548;
+--blanco: white;
+--negro: black;
+
+/* font */
+--zurichItalic: zurichItalic;
+--zurichBold: zurichBold;
+
+/* fontsize */
+--sm: 14px;
+--md: 16px;
+--lg: 18px;
+}
+
+body{
+    font-family: var(--zurichBold);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* open Index / Inicio de sesion */
+.firstpage{
+    height: 90vh;
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 1px 5px 8px 1px rgba(0,0,0,0.66);
+}
+
+/* Open Carrusel */
+.carrusel{
+    display: grid;
+    place-items: center;
+    border-radius: 15px 0px 0px 15px;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.380);
+    background-color: var(--naranja);
+    padding-right: 20px;
+    padding-left: 20px;
+}
+/* Close Carrusel */
+
+/* Open Formulario inicio de sesion */
+.login{
+    display: grid;
+    place-items: center;
+    border-radius: 0px 15px;
+}
+
+.Cabecero-formulario{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.logo{
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.vl {
+    border-left: 1px solid black;
+    height: 70px;
+  }
+
+  .Cabecero-formulario span {
+      font-family: var(--zurichBold);
+      font-size: var(--sm);
+      text-transform: uppercase;
+  }
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    background-color: var(--white);
+    border: 1px solid var(--verde);
+    border-radius: 8px;
+    height: 30px;
+    font-size: var(--md);
+    padding: 5px;
+}
+
+.primary-button{
+    background-color: var(--verde);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 30px;
+    margin-top: 14px;
+    margin-bottom: 10px;
+}
+
+label {
+    margin: 10px 0px 0px 0px;
+}
+
+form p {
+    font-size: var(--sm);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.resend a{
+    color: var(--naranja);
+    text-decoration: none; 
+}
+
+.secondary-button{
+    background-color: var(--white);
+    border-radius: 8px;
+    border: 1px solid var(--verde);
+    color: var(--verde);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 30px;
+}
+/* Close formulario inicio de sesion */
+/* Close Index / Inicio de sesion */
